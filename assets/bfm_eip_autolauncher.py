@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# Modified from zoogie's script (https://github.com/zoogie/bfm_autolauncher/commit/20b488c19c5e627f9a544b2de46979eda31132ad)
 
 import datetime
 import glob
@@ -20,7 +19,7 @@ logging.basicConfig(level=logging.DEBUG, filename='bfm_autolauncher.log', filemo
 s = requests.Session()
 baseurl = "https://bfm.nintendohomebrew.com"
 currentid = ""
-currentVersion = "CURRENT_AUTOLAUNCHER_VERSION"
+currentVersion = "fixedcounter"
 ctrc_kills_al_script = True
 active_job = False
 os_name = os.name
@@ -240,14 +239,17 @@ while True:
         else:
             currentid = r.text
             if len(currentid) > 32:
+                # when bfm is restarting the getwork page displays a http cat
+                # which without this check is interpreted as a job id (it definitely isnt)
                 print("\nID machine broke, is bfm up?\nRetrying in 30 seconds... ")
                 time.sleep(30)
                 continue
             skipUploadBecauseJobBroke = False
             r2 = s.get(baseurl + "/claimWork?task=" + currentid)
             if r2.text == "error":
-                print("Device already claimed, trying again...")
+                print(f"Device {currentid} already claimed, trying again...")
             else:
+                count=10
                 print("\nDownloading part1 for device " + currentid)
                 download_file(baseurl + '/getPart1?task=' +
                               currentid, 'movable_part1.sed')
