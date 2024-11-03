@@ -1,0 +1,173 @@
+/* Header bar styling */
+.header-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #4c6b9a;
+	padding: 10px 20px;
+	border-radius: 8px 8px 8px 8px;
+	position: relative;
+	height: 80px;	
+}
+
+.header-bar h1 {
+	color: #e0f0ff;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0;
+	flex-grow: 1;
+	text-align: center;
+}
+
+.intro h2 {
+	color: #e0f0ff;
+	font-size: 20px;
+	margin: 0;
+	text-align: center;
+}
+
+/* Hamburger menu icon styling */
+.menu-icon {
+	font-size: 24px;
+	cursor: pointer;
+	color: #e0f0ff;
+	background-color: #3a5785;
+	padding: 10px;
+	border-radius: 50%;
+	transition: background-color 0.3s;
+}
+
+.menu-icon:hover {
+	background-color: #4c6b9a; /* Lighter blue for hover effect */
+}
+
+/* Logo styling */
+.logo {
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.nav-links {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: none; /* Hidden by default */
+	flex-direction: column;
+	position: absolute;
+	top: 50px; /* Position below the hamburger icon */
+	left: 10px;
+	background-color: #3a5785; /* Same background as container */
+	width: 180px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+	border-radius: 8px;
+	z-index: 20; /* Make sure it hovers over content */
+}
+
+.nav-links.show {
+	display: flex;
+}
+
+.nav-links li {
+	text-align: center;
+	padding: 10px 0;
+}
+
+.nav-links a {
+	color: #e0f0ff;
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+	padding: 10px;
+	transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+	background-color: #4c6b9a; /* Lighter blue for hover */
+	border-radius: 4px;
+}
+
+/* Basic container styling */
+body {
+	font-family: 'Georgia', serif;
+	background-color: #2a3e5f; /* Dark blue inspired by the darker background color */
+	color: #d1e1f0; /* Soft light blue for text to contrast with the dark background */
+	margin: 0;
+	padding: 20px 0;
+}
+
+a {
+	color: #67CBEB;
+}
+
+a:hover {
+	color: #c3d4ea;
+}
+
+.content {
+	margin-top: 60px; /* Add top margin to prevent content from overlapping the menu */
+}
+
+.container {
+	width: 80%;
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: #3a5785; /* Medium blue for containers */
+	color: #e0f0ff; /* Very light blue for container text */
+	padding: 20px;
+	position: relative;	
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+	border-radius: 8px;
+	overflow: hidden; /* Prevents any overflow from header */
+	
+}
+
+.intro {
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+	color: #c3d4ea; /* Light blue-gray for intro text */
+}
+
+/* Styling for section titles and content */
+.section {
+	width: 60%;
+	margin: 0px auto;
+	text-align: center;
+}
+
+.section-toggle {
+	background-color: #4c6b9a; /* Lighter blue inspired by the wave */
+	color: #e0f0ff; /* Very light blue for button text */
+	font-size: 18px;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	outline: none;
+	transition: background-color 0.3s;
+}
+
+.section-toggle:hover {
+	background-color: #5b7db2; /* Slightly lighter blue on hover */
+}
+
+.section-content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-in-out;
+	padding: 10px 15px;
+	text-align: center;
+	background-color: #3a5785; /* Medium blue for content background */
+	color: #e0f0ff; /* Soft white-blue for content text */
+}
+
+/* Divider style */
+.divider {
+	width: 60%;
+	height: 1px;
+	background-color: #5b7db2; /* Soft light blue for divider */
+	margin: 10px auto;
+	border-radius: 5px;
+}
