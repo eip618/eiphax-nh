@@ -107,6 +107,7 @@ a:hover {
 
 .content {
 	margin-top: 60px; /* Add top margin to prevent content from overlapping the menu */
+	display: block;
 }
 
 .container {
@@ -120,7 +121,6 @@ a:hover {
 	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
 	border-radius: 8px;
 	overflow: hidden; /* Prevents any overflow from header */
-	
 }
 
 .intro {
@@ -147,6 +147,7 @@ a:hover {
 	cursor: pointer;
 	outline: none;
 	transition: background-color 0.3s;
+	margin: 10px 0;
 }
 
 .section-toggle:hover {
@@ -157,10 +158,16 @@ a:hover {
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.3s ease-in-out;
-	padding: 10px 15px;
+	padding: 0;
 	text-align: center;
 	background-color: #3a5785; /* Medium blue for content background */
 	color: #e0f0ff; /* Soft white-blue for content text */
+}
+
+/* Apply padding and max-height when expanded */
+.section-content.show {
+    max-height: 500px; /* Large enough to reveal content */
+    padding: 10px 15px; /* Padding only when expanded */
 }
 
 /* Divider style */
@@ -170,4 +177,62 @@ a:hover {
 	background-color: #5b7db2; /* Soft light blue for divider */
 	margin: 10px auto;
 	border-radius: 5px;
+}
+
+.service {
+	margin: 0 auto;
+	padding: 10px;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+    /* Make the container 90% width on mobile */
+    .container {
+        width: 90%;
+        padding: 15px; /* Slightly reduce padding for mobile */
+    }
+
+    /* Adjust header bar height and font sizes for better readability on small screens */
+    .header-bar {
+        height: 60px;
+        padding: 8px 15px;
+    }
+
+    .header-bar h1 {
+        font-size: 20px;
+    }
+
+    .intro h2 {
+        font-size: 18px;
+    }
+
+    /* Adjust the logo size */
+    .logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    /* Ensure nav-links take full width on smaller screens */
+    .nav-links {
+        width: 100%;
+        left: 0;
+        top: 60px; /* Adjust to fit below the header bar */
+    }
+
+    .nav-links li {
+        padding: 8px 0;
+    }
+
+    .section {
+        width: 90%;
+    }
+
+    .intro, .section-content {
+        width: 100%; /* Ensure content fits well on smaller screens */
+    }
+
+    .section-toggle {
+        font-size: 16px;
+        padding: 8px;
+    }
 }
