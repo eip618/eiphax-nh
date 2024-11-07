@@ -236,3 +236,11 @@ a:hover {
         padding: 8px;
     }
 }
+
+.cnt-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
