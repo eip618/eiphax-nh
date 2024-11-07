@@ -57,7 +57,8 @@ include_once 'submit.php';
 	<div class="divider"></div>
 	<p>Email us here if you need to.</p>
 	</div>
-		<p><script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<!-- Google recaptcha API library -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <!-- Contact form fields -->
 <form action="" method="post" class="cnt-form">
 <table>
@@ -97,7 +98,9 @@ include_once 'submit.php';
 <!-- Status message -->
 <?php if(!empty($statusMsg)){ ?>
     <div class="status-msg <?php echo $status; ?>"><?php echo $statusMsg; ?></div>
-<?php } ?></p>
+<?php } ?>
 	</div>
-</div></body>
+</div>
+
+</body>
 </html>
