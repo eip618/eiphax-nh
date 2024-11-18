@@ -101,6 +101,6 @@ include_once 'submit.php';
 <?php } ?>
 	</div>
 </div>
-
+<script src="script.js"></script>
 </body>
 </html>
