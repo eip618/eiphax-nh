@@ -6,3 +6,5 @@ it is maintained mostly by eip and updated by eip and members of said discord se
 it is mostly written in html, css and php
 ## 'generative' AI usage
 _some_ of the content and code used in nintendohomebrew.com has been written with the help of chatGPT and Claude. the code written with the help of generative AI is restricted only to 'moving parts' such as the contact form and the pdf generator.
+## external libraries
+nintendohomebrew.com makes use of the FPDF library which is released under a permissive license.
