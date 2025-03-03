@@ -169,7 +169,7 @@ a:hover {
     max-height: 500px; /* Large enough to reveal content */
     padding: 10px 15px; /* Padding only when expanded */
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 /* Divider style */
