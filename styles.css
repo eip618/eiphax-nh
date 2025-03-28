@@ -278,3 +278,6 @@ pdfbutton {
 pdfbutton:hover {
     background-color: #218838;
 }
+ul > li {
+  margin-bottom: 20px;
+}
