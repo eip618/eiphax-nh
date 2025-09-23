@@ -62,42 +62,77 @@ include_once 'submit.php';
         <?php echo $statusMsg; ?>
     </div>
 <?php } ?>
-<!-- Google recaptcha API library -->
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-<!-- Contact form fields -->
-<form action="" method="post" class="cnt-form">
-<table>
+<form action="" method="post" class="cnt-form" id="contact-form" novalidate>
+  <table>
     <tr>
-	<td><div class="form-input">
-        <label for="name">Name</label></td>
-        <td><input type="text" name="name" placeholder="Enter your name" value="<?php echo !empty($postData['name'])?$postData['name']:''; ?>" required=""></td>
-    </div>
-	</tr>
-	<tr>
-    <td><div class="form-input">
-        <label for="email">Email</label></td>
-        <td><input type="email" name="email" placeholder="Enter your email" value="<?php echo !empty($postData['email'])?$postData['email']:''; ?>" required=""></td>
-    </div>
-	</tr>
-	<tr>
-    <td><div class="form-input">
-        <label for="usersubject">Subject</label></td>
-        <td><input type="text" name="usersubject" placeholder="Enter subject" value="<?php echo !empty($postData['usersubject'])?$postData['usersubject']:''; ?>" required=""></td>
-    </div>
-	</tr>
-	<tr>
-    <td><div class="form-input">
-        <label for="message">Message</label></td>
-        <td><textarea name="message" placeholder="Type your message here" required=""><?php echo !empty($postData['message'])?$postData['message']:''; ?></textarea></td>
-    </div>
-	</tr>
-</table>
-<p />
-    <div class="form-input">
-        <!-- Google reCAPTCHA box -->
-        <div class="g-recaptcha" data-sitekey="<?php echo $siteKey; ?>"></div>
-    </div>
-    <input type="submit" name="submit" class="btn" value="Submit">
+      <td><div class="form-input"><label for="name">Name</label></div></td>
+      <td>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+          value="<?php echo !empty($postData['name']) ? htmlspecialchars($postData['name'], ENT_QUOTES, 'UTF-8') : ''; ?>"
+          required
+          autocomplete="name"
+        >
+      </td>
+    </tr>
+    <tr>
+      <td><div class="form-input"><label for="email">Email</label></div></td>
+      <td>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          value="<?php echo !empty($postData['email']) ? htmlspecialchars($postData['email'], ENT_QUOTES, 'UTF-8') : ''; ?>"
+          required
+          autocomplete="email"
+        >
+      </td>
+    </tr>
+    <tr>
+      <td><div class="form-input"><label for="usersubject">Subject</label></div></td>
+      <td>
+        <input
+          type="text"
+          name="usersubject"
+          id="usersubject"
+          placeholder="Enter subject"
+          value="<?php echo !empty($postData['usersubject']) ? htmlspecialchars($postData['usersubject'], ENT_QUOTES, 'UTF-8') : ''; ?>"
+          required
+          autocomplete="off"
+        >
+      </td>
+    </tr>
+    <tr>
+      <td><div class="form-input"><label for="message">Message</label></div></td>
+      <td>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Type your message here"
+          rows="6"
+          required
+        ><?php echo !empty($postData['message']) ? htmlspecialchars($postData['message'], ENT_QUOTES, 'UTF-8') : ''; ?></textarea>
+      </td>
+    </tr>
+  </table>
+
+  <!-- anti-bot fields -->
+  <input
+    type="text"
+    name="website"
+    id="website"
+    tabindex="-1"
+    autocomplete="off"
+    aria-hidden="true"
+    style="position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden; opacity:0;"
+  >
+  <input type="hidden" name="ts" value="<?php echo time(); ?>">
+
+  <input type="submit" name="submit" class="btn" value="Submit">
 </form>
 <p />
 	</div>
