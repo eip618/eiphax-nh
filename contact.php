@@ -57,7 +57,6 @@ include_once 'submit.php';
 	<div class="divider"></div>
 	<p>Email us here if you need to.</p>
 	</div>
-<?php } ?>
       <form class="form" action="" method="post" novalidate>
         <div class="status-msg" role="status" aria-live="polite" <?php echo empty($statusMsg) ? 'hidden' : ''; ?>>
           <?php if (!empty($statusMsg)) echo $statusMsg; ?>
