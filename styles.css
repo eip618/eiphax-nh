@@ -90,7 +90,7 @@
 
 /* Basic container styling */
 body {
-	font-family: 'Georgia', serif;
+	font-family: 'JetBrains Mono','Consolas', serif, monospace;
 	background-color: #2a3e5f; /* Dark blue inspired by the darker background color */
 	color: #d1e1f0; /* Soft light blue for text to contrast with the dark background */
 	margin: 0;
@@ -282,5 +282,5 @@ ul > li {
   margin-bottom: 20px;
 }
 code {
-  font-family: "Courier New", monospace;
+  font-family:'Consolas','DejaVu Sans Mono','JetBrains Mono',monospace;
 }
