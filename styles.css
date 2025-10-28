@@ -281,3 +281,6 @@ pdfbutton:hover {
 ul > li {
   margin-bottom: 20px;
 }
+code {
+  font-family: "Courier New", monospace;
+}
