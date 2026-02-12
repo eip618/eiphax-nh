@@ -98,7 +98,7 @@ require '/var/www/eipmain/lib/submit.php';
         <label class="hp" aria-hidden="true"
                style="position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden; opacity:0;">
           Website
-          <input name="favourite_colour" tabindex="-1" autocomplete="new-password">
+          <input name="favourite-colour" tabindex="-1" autocomplete="new-password">
         </label>
         <input type="hidden" name="ts" value="<?php echo time(); ?>">
 
