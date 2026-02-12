@@ -1,6 +1,12 @@
 <?php 
-// Include form submission script 
-include_once 'submit.php'; 
+$formConfig = [
+  'toEmail'   => 'staff@nintendohomebrew.com',
+  'fromName'  => 'nh contact',
+  'formEmail' => 'contact@nintendohomebrew.com',
+  'subject'   => 'New submission from NH MAIN FORM',
+];
+
+require '/var/www/eipmain/lib/submit.php';
 ?>
 <!doctype html>
 <html lang="en">
