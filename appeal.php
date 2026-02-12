@@ -29,8 +29,6 @@ $formConfig = [
   ],
 ];
 
-];
-
 require '/var/www/eipmain/lib/submit.php';
 ?>
 <!doctype html>
