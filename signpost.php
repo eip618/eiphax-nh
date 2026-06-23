@@ -1,7 +1,7 @@
 <?php
 $pageTitle = 'Nintendo Homebrew | Services Directory';
 $pageMetaTitle = 'Nintendo Homebrew';
-$pageDescription = 'The official website of the Nintendo Homebrew Discord server. We\'re a collection of homebrew and console enthusiasts and modders.';
+$pageDescription = 'Nintendo Homebrew ancillary services directory.';
 $pageUrl = 'https://nintendohomebrew.com/';
 $pageImage = 'https://nintendohomebrew.com/assets/img/NintendoHomebrewLogo.png';
 require __DIR__ . '/header.php';
