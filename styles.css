@@ -28,13 +28,19 @@
 
 /* Hamburger menu icon styling */
 .menu-icon {
-	font-size: 24px;
-	cursor: pointer;
-	color: #e0f0ff;
-	background-color: #3a5785;
-	padding: 10px;
-	border-radius: 50%;
-	transition: background-color 0.3s;
+  font-size: 40px;
+  cursor: pointer;
+  color: #e0f0ff;
+  background-color: #3a5785;
+  padding: 10px;
+  border-radius: 12px;
+  transition: background-color 0.3s;
+  aspect-ratio: 1;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .menu-icon:hover {
