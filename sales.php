@@ -3,7 +3,6 @@ $pageTitle = 'Nintendo Homebrew | Sales Policy';
 $pageMetaTitle = 'Nintendo Homebrew | Sales Policy';
 $pageDescription = 'Nintendo Homebrew does not support, verify, endorse, or facilitate the sale of consoles, accessories, or other goods through its community spaces.';
 $pageUrl = 'https://nintendohomebrew.com/sales-policy';
-$pageImage = 'https://nintendohomebrew.com/assets/img/NintendoHomebrewLogo.png';
 require __DIR__ . '/header.php';
 ?>
     <div class="intro">

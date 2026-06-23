@@ -3,7 +3,6 @@ $pageTitle = 'Nintendo Homebrew | NH PDF Generator';
 $pageMetaTitle = 'Nintendo Homebrew';
 $pageDescription = 'Nintendo Homebrew branded PDF generator for media releases.';
 $pageUrl = 'https://nintendohomebrew.com/';
-$pageImage = 'https://nintendohomebrew.com/assets/img/NintendoHomebrewLogo.png';
 require __DIR__ . '/header.php';
 ?>
 <div class="intro"><h2>NH Letterhead PDF generator</h2>

@@ -37,7 +37,6 @@ $pageTitle = 'Nintendo Homebrew | Ban Appeals';
 $pageMetaTitle = 'Nintendo Homebrew';
 $pageDescription = 'Nintendo Homebrew ban appeals form.';
 $pageUrl = 'https://nintendohomebrew.com/';
-$pageImage = 'https://nintendohomebrew.com/assets/img/NintendoHomebrewLogo.png';
 require __DIR__ . '/header.php';
 ?>
 <div class="intro"><h2>Ban Appeal</h2>

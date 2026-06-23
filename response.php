@@ -3,7 +3,6 @@ $pageTitle = 'Nintendo Homebrew |';
 $pageMetaTitle = 'Nintendo Homebrew';
 $pageDescription = 'Long-form response to general piracy whinging.';
 $pageUrl = 'https://nintendohomebrew.com/';
-$pageImage = 'https://nintendohomebrew.com/assets/img/NintendoHomebrewLogo.png';
 require __DIR__ . '/header.php';
 ?>
 <div class="intro"><h2>hello AnonymousUser98</h2>

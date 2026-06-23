@@ -3,7 +3,6 @@ $pageTitle = 'NH Modders';
 $pageMetaTitle = 'Nintendo Homebrew';
 $pageDescription = 'Nintendo Homebrew Approved Hardmodders List.';
 $pageUrl = 'https://nintendohomebrew.com/';
-$pageImage = 'https://nintendohomebrew.com/assets/img/NintendoHomebrewLogo.png';
 require __DIR__ . '/header.php';
 ?>
 <div class="intro"><h2>NH-Approved Hardmodders</h2>

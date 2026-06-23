@@ -12,7 +12,6 @@ $pageTitle = 'Nintendo Homebrew | Contact Us';
 $pageMetaTitle = 'Nintendo Homebrew';
 $pageDescription = 'Nintendo Homebrew general contact form.';
 $pageUrl = 'https://nintendohomebrew.com/';
-$pageImage = 'https://nintendohomebrew.com/assets/img/NintendoHomebrewLogo.png';
 require __DIR__ . '/header.php';
 ?>
 <div class="intro"><h2>Contact Us</h2>

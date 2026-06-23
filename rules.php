@@ -3,7 +3,6 @@ $pageTitle = 'Nintendo Homebrew | Rules';
 $pageMetaTitle = 'Nintendo Homebrew';
 $pageDescription = 'Long-form explanation of NH Rules.';
 $pageUrl = 'https://nintendohomebrew.com/';
-$pageImage = 'https://nintendohomebrew.com/assets/img/NintendoHomebrewLogo.png';
 require __DIR__ . '/header.php';
 ?>
 <div class="intro"><h2>Rules: Long Version</h2>

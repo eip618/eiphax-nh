@@ -4,16 +4,23 @@ $pageTitle = $pageTitle ?? $siteName;
 $pageMetaTitle = $pageMetaTitle ?? $siteName;
 $pageDescription = $pageDescription ?? "The official website of the Nintendo Homebrew Discord server. We're a collection of homebrew and console enthusiasts and modders.";
 $pageUrl = $pageUrl ?? 'https://nintendohomebrew.com/';
-$pageImage = $pageImage ?? 'https://nintendohomebrew.com/assets/img/NintendoHomebrewLogo.png';
+$pageImage = $pageImage ?? 'https://nintendohomebrew.com/assets/img/h_banner_social.png';
+$pageImageWidth = $pageImageWidth ?? '400';
+$pageImageHeight = $pageImageHeight ?? '267';
+$pageImageAlt = $pageImageAlt ?? $siteName;
 $pageOgTitle = $pageOgTitle ?? $pageMetaTitle;
 $pageOgDescription = $pageOgDescription ?? $pageDescription;
 $pageOgUrl = $pageOgUrl ?? $pageUrl;
 $pageOgImage = $pageOgImage ?? $pageImage;
-$pageTwitterCard = $pageTwitterCard ?? 'summary_large_image';
+$pageOgImageWidth = $pageOgImageWidth ?? $pageImageWidth;
+$pageOgImageHeight = $pageOgImageHeight ?? $pageImageHeight;
+$pageOgImageAlt = $pageOgImageAlt ?? $pageImageAlt;
+$pageTwitterCard = $pageTwitterCard ?? 'summary';
 $pageTwitterTitle = $pageTwitterTitle ?? $pageOgTitle;
 $pageTwitterDescription = $pageTwitterDescription ?? $pageOgDescription;
 $pageTwitterUrl = $pageTwitterUrl ?? $pageOgUrl;
 $pageTwitterImage = $pageTwitterImage ?? $pageOgImage;
+$pageTwitterImageAlt = $pageTwitterImageAlt ?? $pageOgImageAlt;
 $appleMobileWebAppTitle = $appleMobileWebAppTitle ?? $siteName;
 $stylesheet = $stylesheet ?? 'styles.css';
 $escape = function ($value) {
@@ -31,11 +38,15 @@ $escape = function ($value) {
 <meta property="og:title" content="<?= $escape($pageOgTitle) ?>" />
 <meta property="og:description" content="<?= $escape($pageOgDescription) ?>" />
 <meta property="og:image" content="<?= $escape($pageOgImage) ?>" />
-<meta property="twitter:card" content="<?= $escape($pageTwitterCard) ?>" />
-<meta property="twitter:url" content="<?= $escape($pageTwitterUrl) ?>" />
-<meta property="twitter:title" content="<?= $escape($pageTwitterTitle) ?>" />
-<meta property="twitter:description" content="<?= $escape($pageTwitterDescription) ?>" />
-<meta property="twitter:image" content="<?= $escape($pageTwitterImage) ?>" />
+<meta property="og:image:width" content="<?= $escape($pageOgImageWidth) ?>" />
+<meta property="og:image:height" content="<?= $escape($pageOgImageHeight) ?>" />
+<meta property="og:image:alt" content="<?= $escape($pageOgImageAlt) ?>" />
+<meta name="twitter:card" content="<?= $escape($pageTwitterCard) ?>" />
+<meta name="twitter:url" content="<?= $escape($pageTwitterUrl) ?>" />
+<meta name="twitter:title" content="<?= $escape($pageTwitterTitle) ?>" />
+<meta name="twitter:description" content="<?= $escape($pageTwitterDescription) ?>" />
+<meta name="twitter:image" content="<?= $escape($pageTwitterImage) ?>" />
+<meta name="twitter:image:alt" content="<?= $escape($pageTwitterImageAlt) ?>" />
 <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />

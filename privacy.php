@@ -3,7 +3,6 @@ $pageTitle = 'Nintendo Homebrew |';
 $pageMetaTitle = 'Nintendo Homebrew';
 $pageDescription = 'Privacy policy for NH and Kurisu';
 $pageUrl = 'https://nintendohomebrew.com/';
-$pageImage = 'https://nintendohomebrew.com/assets/img/NintendoHomebrewLogo.png';
 require __DIR__ . '/header.php';
 ?>
 <div class="intro"><h2>Privacy Policy</h2>
