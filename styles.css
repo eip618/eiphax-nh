@@ -32,6 +32,7 @@
   cursor: pointer;
   color: #e0f0ff;
   background-color: #3a5785;
+  border: 0;
   padding: 10px;
   border-radius: 12px;
   transition: background-color 0.3s;
@@ -41,6 +42,8 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  font-family: inherit;
+  line-height: 1;
 }
 
 .menu-icon:hover {
@@ -78,6 +81,31 @@
 .nav-links li {
 	text-align: center;
 	padding: 10px 0;
+	margin-bottom: 0;
+}
+
+.nav-links .nav-close-item {
+	display: flex;
+	justify-content: flex-end;
+	padding: 8px 8px 0;
+}
+
+.nav-close {
+	width: 32px;
+	height: 32px;
+	color: #e0f0ff;
+	background-color: transparent;
+	border: 0;
+	border-radius: 4px;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 28px;
+	line-height: 1;
+}
+
+.nav-close:hover,
+.nav-close:focus {
+	background-color: #4c6b9a;
 }
 
 .nav-links a {
@@ -141,6 +169,77 @@ a:hover {
 	width: 60%;
 	margin: 0px auto;
 	text-align: center;
+}
+
+.rules-section {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+	interpolate-size: allow-keywords;
+}
+
+.rules-section summary {
+	background-color: #4c6b9a;
+	color: #e0f0ff;
+	font-size: 18px;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	outline: none;
+	transition: background-color 0.3s;
+	margin: 10px 0;
+	list-style: none;
+}
+
+.rules-section summary::-webkit-details-marker {
+	display: none;
+}
+
+.rules-section summary::after {
+	content: "+";
+	display: inline-block;
+	margin-left: 10px;
+	transition: transform 0.3s;
+}
+
+.rules-section[open] summary::after {
+	content: "\00d7";
+	transform: rotate(90deg);
+}
+
+.rules-section summary:hover {
+	background-color: #5b7db2;
+}
+
+.rules-section::details-content {
+	block-size: 0;
+	overflow: hidden;
+	transition-property: block-size, content-visibility;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+	transition-behavior: allow-discrete;
+}
+
+.rules-section[open]::details-content {
+	block-size: auto;
+}
+
+.rules-content {
+	padding: 10px 15px;
+	text-align: center;
+	background-color: #3a5785;
+	color: #e0f0ff;
+}
+
+.rules-content ul {
+	text-align: left;
+	display: inline-block;
+	margin: 0 auto 10px;
+}
+
+.rules-content li {
+	margin-bottom: 8px;
 }
 
 .section-toggle {
@@ -231,7 +330,8 @@ a:hover {
         padding: 8px 0;
     }
 
-    .section {
+    .section,
+	.rules-section {
         width: 90%;
     }
 
@@ -239,7 +339,8 @@ a:hover {
         width: 100%; /* Ensure content fits well on smaller screens */
     }
 
-    .section-toggle {
+    .section-toggle,
+	.rules-section summary {
         font-size: 16px;
         padding: 8px;
     }

@@ -1,58 +1,11 @@
-<!doctype html>
-
-<html lang="en">
-<head>
-<!-- Primary Meta Tags -->
-<title>Nintendo Homebrew | Sales Policy</title>
-<meta name="title" content="Nintendo Homebrew | Sales Policy" />
-<meta name="description" content="Nintendo Homebrew does not support, verify, endorse, or facilitate the sale of consoles, accessories, or other goods through its community spaces." />
-
-<!-- Open Graph / Facebook -->
-
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://nintendohomebrew.com/sales-policy" />
-<meta property="og:title" content="Nintendo Homebrew | Sales Policy" />
-<meta property="og:description" content="Nintendo Homebrew does not support, verify, endorse, or facilitate the sale of consoles, accessories, or other goods through its community spaces." />
-<meta property="og:image" content="https://nintendohomebrew.com/assets/img/NintendoHomebrewLogo.png" />
-
-<!-- Twitter -->
-
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="https://nintendohomebrew.com/sales-policy" />
-<meta property="twitter:title" content="Nintendo Homebrew | Sales Policy" />
-<meta property="twitter:description" content="Nintendo Homebrew does not support, verify, endorse, or facilitate the sale of consoles, accessories, or other goods through its community spaces." />
-<meta property="twitter:image" content="https://nintendohomebrew.com/assets/img/NintendoHomebrewLogo.png" />
-
-<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Nintendo Homebrew" />
-<link rel="manifest" href="/site.webmanifest" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div class="container">
-    <!-- Header Bar -->
-    <header class="header-bar">
-        <div class="menu-icon" onclick="toggleMenu()">
-            &#9776; <!-- Hamburger icon -->
-        </div>
-        <h1>Nintendo Homebrew</h1>
-        <img src="/assets/img/NintendoHomebrewLogo.png" alt="Nintendo Homebrew Logo" class="logo">
-    </header>
-<!-- Navigation Menu -->
-<nav>
-    <ul class="nav-links">
-        <li><a href="/index">Home</a></li>
-        <li><a href="/rules">Rules</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
-</nav>
-
-<!-- Main content -->
-<div class="content">
+<?php
+$pageTitle = 'Nintendo Homebrew | Sales Policy';
+$pageMetaTitle = 'Nintendo Homebrew | Sales Policy';
+$pageDescription = 'Nintendo Homebrew does not support, verify, endorse, or facilitate the sale of consoles, accessories, or other goods through its community spaces.';
+$pageUrl = 'https://nintendohomebrew.com/sales-policy';
+$pageImage = 'https://nintendohomebrew.com/assets/img/NintendoHomebrewLogo.png';
+require __DIR__ . '/header.php';
+?>
     <div class="intro">
         <h2>Sales Policy</h2>
         <div class="divider"></div>
