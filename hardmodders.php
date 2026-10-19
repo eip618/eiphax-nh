@@ -30,7 +30,7 @@ require __DIR__ . '/header.php';
 				<li>Lazr1026<br>
 				(USA only)<br>
 				Hardmodder<br>
-				Consoles Serviced: Wii, Wii U, Switch<br>
+				Consoles Serviced: Wii, Wii U<br>
 				Contact:<br>
 				Discord: @lazr1026<br>
 				GBATemp: <a href="https://gbatemp.net/members/lazr1026.541964/">GBATemp Account/</a><br></li>
