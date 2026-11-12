@@ -1,0 +1,60 @@
+{
+    "prefixes": {
+        "XAW1": {"unpatched": 1006500, "maybe": 1012000},
+        "XAW4": {"unpatched": 4001100, "maybe": 4001300},
+        "XAW7": {"unpatched": 7001750, "maybe": 7003000},
+        "XAW9": {"unpatched":       0, "maybe": 9999999},
+        "XAJ1": {"unpatched": 1002000, "maybe": 1003000},
+        "XAJ4": {"unpatched": 4004400, "maybe": 4008300},
+        "XAJ7": {"unpatched": 7004000, "maybe": 7005000},
+        "XAJ9": {"unpatched":       0, "maybe": 9999999},
+        "XAK1": {"unpatched":       0, "maybe": 9999999},
+        "XAK4": {"unpatched":       0, "maybe": 9999999},
+        "XAK7": {"unpatched":       0, "maybe": 9999999},
+        "XAK9": {"unpatched":       0, "maybe": 9999999}
+    },
+    "regex": {
+        "valid": "XA[JKW][1479][0-9]{6}",
+        "mariko": "X[KJWT][JWCEK][0-9]{7}",
+        "switch2": "HA[JKWE][0-9]{7}"
+    },
+    "prefixDropdown": {
+        "XAW (World/Global)": [
+            {"prefix": "XAW1", "name": "XAW1"},
+            {"prefix": "XAW4", "name": "XAW4"},
+            {"prefix": "XAW7", "name": "XAW7"},
+            {"prefix": "XAW9", "name": "XAW9"}
+        ],
+        "XAJ (Japan)": [
+            {"prefix": "XAJ1", "name": "XAJ1"},
+            {"prefix": "XAJ4", "name": "XAJ4"},
+            {"prefix": "XAJ7", "name": "XAJ7"},
+            {"prefix": "XAJ9", "name": "XAJ9"}
+        ],
+        "XAK (Korea)": [
+            {"prefix": "XAK1", "name": "XAK1"},
+            {"prefix": "XAK4", "name": "XAK4"},
+            {"prefix": "XAK7", "name": "XAK7"},
+            {"prefix": "XAK9", "name": "XAK9"}
+        ],
+        "Mariko (not hackable via software)": [
+            {"prefix": "XKJ", "name": "XKJ (0–9)"},
+            {"prefix": "XKE", "name": "XKE (0–9)"},
+            {"prefix": "XTW", "name": "XTW (0–9)"},
+            {"prefix": "XTJ", "name": "XTJ (0–9)"},
+            {"prefix": "XTE", "name": "XTE (0–9)"},
+            {"prefix": "XJW", "name": "XJW (0–9)"},
+            {"prefix": "XJJ", "name": "XJJ (0–9)"},
+            {"prefix": "XJE", "name": "XJE (0–9)"},
+            {"prefix": "XWW", "name": "XWW (0–9)"},
+            {"prefix": "XWJ", "name": "XWJ (0–9)"},
+            {"prefix": "XWE", "name": "XWE (0–9)"}
+        ],
+        "Switch 2 (not applicable)": [
+            {"prefix": "HAE", "name": "HAE (0-9)"},
+            {"prefix": "HAJ", "name": "HAJ (0-9)"},
+            {"prefix": "HAK", "name": "HAK (0-9)"},
+            {"prefix": "HAW", "name": "HAW (0-9)"}
+        ]
+    }
+}
